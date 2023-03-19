@@ -1,0 +1,48 @@
+ * {
+  box-sizing: border-box;
+  font-family: Noto Sans Lao;
+ }
+
+ body {
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+ margin-left: 0;
+ }
+
+ .container {
+  margin: 30px auto;
+  width: 350px;
+ }
+ .Manu  {
+    display: flex;
+    justify-content: space-evenly;
+    background: black;
+    padding: 10px;
+ }
+ .Manu li a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    color : #ffff;
+    border : none;
+    position: relative;
+ }
+ .Manu li a::after {
+    content: '';
+    position: absolute;
+    background : red;
+    width: 0%;
+    height: 5px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+ }
+ .Manu li a:hover::after {
+    width: 100%;
+    transition: all 2s ease-out;
+ }

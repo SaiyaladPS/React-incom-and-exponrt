@@ -1,0 +1,22 @@
+.report-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    background:#dedede;
+    height: 100px;
+}
+.report-container>div:first-of-type {
+    border-right : 2px solid slategrey;
+    height: 50px;
+}
+.report {
+    font-size: 20px;
+}
+.income {
+    color : yellowgreen;
+    font-weight: bolder;
+}
+.expense {
+    color : red;
+    font-weight: bolder;
+}
